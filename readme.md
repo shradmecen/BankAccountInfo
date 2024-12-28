@@ -13,12 +13,11 @@ Funkcjonalności:
 - Obsługa błędów – program reaguje na błędy, takie jak niepoprawne dane wejściowe lub problemy z połączeniem z serwerem NBP, wyświetlając odpowiednie komunikaty.
 
 Struktura:
-Projekt składa się z dwóch głównych klas:
-- Main: 
+- klasa Main: 
     - Klasa główna aplikacji, która odpowiada za interakcję z użytkownikiem oraz wywołanie metod z klasy BankAccountInfo. Umożliwia wprowadzenie danych wejściowych i wyświetlenie wyników. Zawiera również logikę walidacji danych wejściowych.
     - Metody:
         - main(String[] args) – główna metoda programu, która obsługuje wejście użytkownika oraz wywołuje funkcję w klasie BankAccountInfo.
-- BankAccountInfo
+- klasa BankAccountInfo
     - Klasa odpowiedzialna za komunikację z serwisem NBP oraz przetwarzanie danych. Odpowiada za pobranie danych o bankach i znalezienie informacji o banku na podstawie wprowadzonych trzech cyfr numeru konta.
     - Metody:
         - getBankInfo(String accountPrefix) – metoda, która łączy się z serwisem NBP, pobiera dane o bankach, przetwarza je i zwraca nazwę banku oraz numer banku dla pasujących danych.
